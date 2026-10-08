@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" fill="none" className="w-auto h-full">
+  <!-- TBEA Italic Wordmark -->
+  <text 
+    x="160" 
+    y="65" 
+    text-anchor="middle" 
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Arial Black', sans-serif" 
+    font-weight="900" 
+    font-style="italic" 
+    font-size="62" 
+    letter-spacing="2" 
+    fill="#003E92"
+  >
+    TBEA
+  </text>
+
+  <!-- Slogan: Always Reliable -->
+  <text 
+    x="160" 
+    y="100" 
+    text-anchor="middle" 
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" 
+    font-weight="500" 
+    font-size="24" 
+    letter-spacing="0.5" 
+    fill="#003E92"
+  >
+    Always Reliable
+  </text>
+</svg>

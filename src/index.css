@@ -1,0 +1,209 @@
+@import "tailwindcss";
+
+/* =========================================================
+   ANANTGRID — BRAND FONT
+   ========================================================= */
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/IBMPlexSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/IBMPlexSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/IBMPlexSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================================================
+   ANANTGRID — BRAND SYSTEM
+   ========================================================= */
+
+@theme {
+  /* Brand Colours */
+  --color-brand-navy: #111361;
+  --color-brand-navy-soft: #20206F;
+  --color-brand-orange: #F37043;
+  --color-brand-grey: #AEAEAD;
+
+  /* Light Surfaces */
+  --color-brand-white: #FFFFFF;
+  --color-brand-bg: #F7F7F5;
+  --color-brand-surface: #F1F2F1;
+
+  /* Typography */
+  --color-brand-text: #202020;
+  --color-brand-text-secondary: #000000;
+  --font-display: "IBM Plex Sans", sans-serif;
+  --font-body: "IBM Plex Sans", sans-serif;
+
+  /* UI */
+  --color-brand-border: #E3E3E1;
+
+  /* Radius */
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+/* =========================================================
+   BASE THEME
+   ========================================================= */
+
+@layer base {
+  :root {
+    --background: #FFFFFF;
+    --foreground: #202020;
+
+    --card: #FFFFFF;
+    --card-foreground: #202020;
+
+    --popover: #FFFFFF;
+    --popover-foreground: #202020;
+
+    --primary: #111361;
+    --primary-foreground: #FFFFFF;
+
+    --secondary: #20206F;
+    --secondary-foreground: #FFFFFF;
+
+    --muted: #F7F7F5;
+    --muted-foreground: #666666;
+
+    --accent: #F37043;
+    --accent-foreground: #FFFFFF;
+
+    --border: #E3E3E1;
+    --input: #E3E3E1;
+    --ring: #F37043;
+  }
+
+  /*
+   * Dark mode variables are retained for components
+   * that intentionally use dark sections.
+   *
+   * The website itself remains LIGHT by default.
+   */
+
+  .dark {
+    --background: #111361;
+    --foreground: #FFFFFF;
+
+    --card: #20206F;
+    --card-foreground: #FFFFFF;
+
+    --popover: #20206F;
+    --popover-foreground: #FFFFFF;
+
+    --primary: #F37043;
+    --primary-foreground: #FFFFFF;
+
+    --secondary: #FFFFFF;
+    --secondary-foreground: #111361;
+
+    --muted: #20206F;
+    --muted-foreground: #D7D7E5;
+
+    --border: rgba(255, 255, 255, 0.14);
+    --input: rgba(255, 255, 255, 0.18);
+
+    --ring: #F37043;
+  }
+}
+
+/* =========================================================
+   GLOBAL ELEMENTS
+   ========================================================= */
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    @apply border-brand-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    @apply bg-brand-white text-brand-text font-body antialiased;
+
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #root {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display tracking-tight;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font-family: inherit;
+  }
+
+  ::selection {
+    background: #111361;
+    color: #FFFFFF;
+  }
+}
+
+/* =========================================================
+   GLOBAL CONTAINER
+   ========================================================= */
+
+.container-grid {
+  @apply max-w-7xl mx-auto px-6 md:px-12 lg:px-16;
+}
+
+/* =========================================================
+   TECHNICAL / EYEBROW LABELS
+   ========================================================= */
+
+.text-technical {
+  @apply text-[10px] uppercase tracking-[0.3em] font-semibold text-brand-orange;
+}
+
+.eyebrow {
+  @apply flex items-center gap-4 mb-6;
+}
+
+.eyebrow-line {
+  @apply h-[1px] w-8 bg-brand-orange;
+}
+
+.eyebrow-text {
+  @apply text-[10px] uppercase tracking-[0.3em] font-semibold text-brand-orange;
+}

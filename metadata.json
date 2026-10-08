@@ -1,0 +1,6 @@
+{
+  "name": "AnantGrid",
+  "description": "AnantGrid Private Limited - Power Transmission Infrastructure Developer",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

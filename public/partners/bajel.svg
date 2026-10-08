@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" fill="none" className="w-auto h-full">
+  <!-- Blue Square Mark -->
+  <rect x="10" y="10" width="100" height="100" rx="4" fill="#005AAB" />
+  
+  <!-- Icon Mark inside square -->
+  <circle cx="68" cy="38" r="6" fill="#FFFFFF" />
+  <path 
+    d="M36 53 L55 35 L68 47 L83 33" 
+    stroke="#FFFFFF" 
+    stroke-width="7" 
+    stroke-linecap="round" 
+    stroke-linejoin="round" 
+    fill="none" 
+  />
+  
+  <!-- BAJEL Typography -->
+  <text 
+    x="60" 
+    y="93" 
+    text-anchor="middle" 
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+    font-weight="900" 
+    font-size="20" 
+    letter-spacing="2" 
+    fill="#FFFFFF"
+  >
+    BAJEL
+  </text>
+  
+  <!-- Projects Typography -->
+  <text 
+    x="126" 
+    y="70" 
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+    font-weight="700" 
+    font-size="34" 
+    letter-spacing="-0.5" 
+    fill="#005AAB"
+  >
+    Projects
+  </text>
+</svg>
